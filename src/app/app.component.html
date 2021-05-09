@@ -1,0 +1,20 @@
+<div class="game-background">
+    <app-alert *ngIf="isGameOverAlertOpened" (close)="toggleGameOverAlert()" [score]="this.score.toLocaleString()" [isRecord]="this.isRecord"></app-alert>
+    <div class="game-container">
+        <div class="game-score">
+            <h1 class="game-score__caption">Score: {{this.score}}</h1>
+            <h1 class="game-score__caption">Best score: {{this.bestScore}}</h1>
+        </div>
+        <div class="game-board">
+            <div class="game-board__row" *ngFor="let row of gameBoard.cells; let i = index">
+                <div class="game-board__column" *ngFor="let column of  gameBoard.cells; let j = index"
+                    [ngStyle]="{'background-color': getCellColor(i,j)}"  
+                    ></div>
+            </div>
+        </div>
+        <div class="game-buttons">
+            <button (click)="newGame()" type="button" class="game-button">New Game</button>
+        </div>
+        
+    </div>
+</div>

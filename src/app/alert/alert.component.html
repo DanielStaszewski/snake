@@ -1,0 +1,14 @@
+<div class="backdrop">
+</div>
+<div class="alert-box">
+    <span class="close" (click)="onClose()">&times;</span>
+    <div class="span-wrapper">
+        <h3 class="alert-caption">{{this.isRecord ? "Congratulations!" : "Game Over!"}}</h3>
+    </div>
+    <p class="alert-result">{{this.isRecord ? "New record:" : "Your score:"}}</p>
+    <p class="alert-score">{{this.score}}</p>
+
+    <div class="alert-box-actions">
+        <button class="alert-button" (click)="onClose()">Close</button>
+    </div>
+</div>

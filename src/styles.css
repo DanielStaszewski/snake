@@ -1,0 +1,35 @@
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 10px;
+    width: 100vw;
+    height: 100vh;
+    font-family: Helvetica;
+}
+
+button {
+    cursor: pointer;
+    outline:none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    color: inherit;
+    font: inherit;
+
+    line-height: normal;
+
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    -webkit-appearance: none;
+}
